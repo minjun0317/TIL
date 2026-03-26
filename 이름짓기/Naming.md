@@ -1,24 +1,37 @@
-# 이름짓기
-
 ## Lower camel case
--첫단어는 소문자로 표기
--이후 단어들은 대문자로 표기
--띄어쓰기나 언더바(_) 사용 불가로 이어쓰기로 표기
+- 첫단어는 소문자로 표기
+- 값들을 표기
+- 이후 단어들은 대문자로 표기
+- 띄어쓰기나 언더바(_) 사용 불가로 이어쓰기로 표기
 
-**사용 예시**
+| **사용 예시**
 - 함수(fuction)
 - 메소드(method)
 - 변수(variable)
-- 상수(constant)100
+- 상수(constant)
 
-
-```swift
-print("ㅇ리;마ㅓㄴ이ㅏ러") //fsfgsd
+```ts
+let userName = "minjun"
+var studentAge = 11
+func printMinjunProfile() {
+}
 ```
 
-| 안녕 | 하세요 | 헬로우웅 |
-|------:|:------|------:|
-| 핼로우 | 짜이찌엔 | 이ㅓ링 |
-| 핼로우 | 짜이찌엔 | 이러;닝러 |
-| 핼로우 | 짜이찌엔 | ㄴ이ㅏ룽누 |
-| 핼로우 | 짜이찌엔 | ㅇ니러ㅐㄴ;ㅓ |
+## Upper Camel Case
+- 첫단어는 대문자로 표기
+- 타입(type) 이름들을 표기
+
+| **사용 예시**
+- 참조 타입(class)
+- 값 타입(struct)
+- 값 묶는 타입(enum)
+- 기능 추가 타입(extension)
+- ...
+```ts
+struct MinjunProfile {   
+}
+class MinjunManager {
+}
+
+```
+.
