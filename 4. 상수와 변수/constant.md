@@ -28,3 +28,4 @@ let inputB: Int = 200
 
 sum = inputA + inputB // == 300
 ```
+<span style="color:yellow"></span>

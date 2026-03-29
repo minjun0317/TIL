@@ -34,3 +34,4 @@ let version = 7
 let sum = "\\(language) \\(version).0"
 //== Swift 7.0
 ```
+<span style="color:yellow"></span>

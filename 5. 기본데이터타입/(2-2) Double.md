@@ -12,3 +12,4 @@
 ```ts
 let pi: Double = 3.14159265359
 ```
+<span style="color:yellow"></span>

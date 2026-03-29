@@ -34,3 +34,4 @@ let sigma: Character = ⨊
 ```ts
 let moon: Character = 🌚🌝
 ```
+<span style="color:yellow"></span>

@@ -25,3 +25,4 @@ var vaiable: String = "변경 가능"
 nickname = "minjun"
 nickname = "minjun0317" ✅
 ```
+<span style="color:yellow"></span>

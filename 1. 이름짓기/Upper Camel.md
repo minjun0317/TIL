@@ -22,3 +22,4 @@ class MinjunManager {
 }
 
 ```
+<span style="color:yellow"></span>
