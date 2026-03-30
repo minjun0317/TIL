@@ -33,8 +33,8 @@ default:
 
 .
 
-# where 절을 사용해서 조건을 지정할 수 있다
-
+# where 절
+➡️ 추가적인 조건을 명시할 수 있다
  ```swift
  let score = 75 
 
