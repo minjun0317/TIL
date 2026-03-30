@@ -44,15 +44,27 @@ do {
 ➡️ 오류는 Error 프로토콜을 따르는 값, 어떤 오류가 날지 알 수 없음
 - 타입 제한 없이 오류 던지기 (`throws`)를 사용
 
-.
-
 | **사용 예시**
 
-// ganadi가 산책 준비하다가 아무 에러나 날 수 있음
-func prepareWalk() throws {
-    print("ganadi가 목줄 찾는 중...")
-    
-    if Bool.random() {
-        throw NSError(domain: "ganadi", code: 1)
-    }
+```ts
+//모든 에러 가능 (any Error)
+
+func test() throws(any Error) {
+    throw MyError.somethingWrong
 }
+
+func ganadiTest() throws(any Error) {
+    throw GanadiError.leashLost
+}
+
+
+//특정 에러만 가능 (typed throws)
+
+func test() throws(MyError) {
+    throw MyError.somethingWrong
+}
+
+func ganadiTest() throws(GanadiError) {
+    throw GanadiError.leashLost
+}
+```
