@@ -8,3 +8,8 @@
         - 예기치 못한 상황을 최소화한다
 
 | **사용 예시**
+
+```ts
+var capybara : int // 변수
+capybara = nil
+```
