@@ -10,6 +10,7 @@
 | **사용 예시**
 
 ```ts
-var capybara : int // 변수
+var ganadi : Int?
 capybara = nil
 ```
+추후에 그림 첨부 예정
