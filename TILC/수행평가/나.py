@@ -8,6 +8,6 @@ while n != 1:
     else:
         n = 3*n + 1
     
-    count += 1
+    count = count + 1
 
 print(count)
