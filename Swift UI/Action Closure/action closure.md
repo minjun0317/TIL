@@ -2,9 +2,13 @@
 ➡️ 버튼을 눌렀을 때 실행되는 코드 블럭
 
 # Button View
-➡️ 사용자가 상호작용을 할 수 있는 요소로, 다양한 스타일과 모디파이어를 사용하여 쉽게 커스텀 가능하다
+➡️ 사용자가 상호작용을 할 수 있는 요소로, `Button` 구조체를 사용하여 생성,  다양한 스타일과 모디파이어를 사용하여 쉽게 커스텀 가능하다
     
-- 모디파이어 = 뷰의 속성을 변경하거나 스타일 적용및 기능 추가에 사용되는 컴포넌트 
+- 모디파이어 = 뷰의 속성을 변경하거나 스타일 적용및 기능 추가에 사용되는 컴포넌트
+
+|Action|버튼이 눌렸을 때 실행되는 클로저|
+|:---:|:---|
+|Label|버튼의 외형을 정의하는 뷰|
 
 
 | **사용 예시**
@@ -38,13 +42,22 @@ Button(action: { print("Tap Ganadi") }) {
 ```Swift
 struct ContentView: View {
   var body: some View {
-    Button(action: self.didTapButton) { // <-
-      Text("MyButton")
+    Button(action: TapGanadiButton) { // == <-
+      Text("Ganadi Button")
     }
   }
   
-  func didTapButton() {
-    print("tap button!")
+  func TapGanadiButton() {
+    print("oh! what are you doing?")
   }
   }
 ```
+
+.
+
+.
+
+.
+
+# Button Style
+➡️ 
