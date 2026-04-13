@@ -60,4 +60,33 @@ struct ContentView: View {
 .
 
 # Button Style
-➡️ 
+➡️ .buttonStyle()으로 지정 가능하며, buttonStyle 프로토콜을 준수하는 Struct 인스턴스를 .buttonStyle()안에 주입하면 적용되는데, 이 때 자유롭게 버튼을 커스텀하여 사용이 가능
+- .default : 파란색 버튼
+
+- .plain : 일반 Text 형태 그대로 따라가는 버튼
+- .bordered : 버튼의 tint색상을 기반으로 자동으로 테두리에 어울리는 색상이 생기는 버튼
+- .borderedProminent : 버튼의 tint색상을 기반으로 텍스타가 눈에 띄도록 해주는 스타일
+- .borderless : 테두리가 없는 버튼(//== .default와 동일)
+
+| **사용 예시**
+```Swift
+VStack {
+  Button("ganadi") { }
+  .buttonStyle(.automatic) 
+  // default
+
+  Button("Ganadi") { }
+  .buttonStyle(.plain) 
+  // default
+
+  Button("GaNaDi") { }
+  .buttonStyle(.bordered)
+
+  Button("GANADI") { }
+  .buttonStyle(.borderedProminent)
+
+  Button("GanadI") { }
+  .buttonStyle(.borderless)
+}
+.tint(.purple)
+```
