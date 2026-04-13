@@ -9,16 +9,17 @@ int prime(int n)
         if (n % i == 0) {
             return 0;
         }
-         
     }
     return 1;
 }
 
-int main()
+int main(void)
 {
     int n;
     printf("정수를 입력해 : ");
-    scanf("%d", &n);
+    if (scanf("%d", &n) != 1) {
+        return 0;
+    }
 
     if (prime(n)) {
         printf("%d는 소수입니다.\n", n);
@@ -27,5 +28,4 @@ int main()
     }
 
     return 0;
-
 }
