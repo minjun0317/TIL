@@ -20,4 +20,3 @@ int main()
     printf("%d!의 값은 %llu 입니다.\n", n, value);
     return 0;
 }
-ㄴ

@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     "실습2/problem6"
+binary-path:     "/Users/kimminjun/Desktop/studyios/TILC/실습2/problem6"
 relocations:     []
 ...
