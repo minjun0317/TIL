@@ -179,12 +179,14 @@ struct SecondView: View {
 
 # 데이터 전달
 
+| **사용 예시**
+
 ```swift
 NavigationStack {
     NavigationLink {
         DetailView(name: "Ganadi")
     } label: {
-        Text("Go Detail")
+        Text("Go Ganadi")
     }
 }
 
@@ -199,9 +201,17 @@ struct DetailView: View {
 
 ---
 
+.
+
+.
+
+.
+
 # NavigationStack + Path (고급)
 
 ➡️ 데이터 기반 네비게이션 관리
+
+| **사용 예시**
 
 ```swift
 struct ContentView: View {
@@ -210,7 +220,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
-                Button("Go Detail") {
+                Button("Go Ganadi") {
                     path.append("Ganadi")
                 }
             }
@@ -224,14 +234,22 @@ struct ContentView: View {
 
 ---
 
+.
+
+.
+
+.
+
 # NavigationView (구버전)
 
 ➡️ iOS 15 이하에서 사용 (현재는 비추천)
 
+| **사용 예시**
+
 ```swift
 NavigationView {
-    NavigationLink("Go Detail") {
-        Text("Detail View")
+    NavigationLink("Go Ganadi") {
+        Text("Ganadi View")
     }
 }
 ```
@@ -240,8 +258,8 @@ NavigationView {
 
 # 핵심 정리
 
-* `NavigationStack` 👉 최신 네비게이션 방식
-* `NavigationLink` 👉 화면 이동 트리거
-* `navigationTitle()` 👉 상단 타이틀
-* `toolbar()` 👉 버튼 추가
-* `path` 👉 상태 기반 네비게이션 관리
+- `NavigationStack` -> 최신 네비게이션 방식
+- `NavigationLink` -> 화면 이동 트리거
+- `navigationTitle()` -> 상단 타이틀
+- `toolbar()` -> 버튼 추가
+- `path` -> 상태 기반 네비게이션 관리
