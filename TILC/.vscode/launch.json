@@ -20,8 +20,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/kimminjun/Desktop/studyios/TILC/실습2",
-      "program": "/Users/kimminjun/Desktop/studyios/TILC/실습2/build/Debug/outDebug"
+      "cwd": "/Users/kimminjun/Desktop/studyios/TILC/수업/실습2",
+      "program": "/Users/kimminjun/Desktop/studyios/TILC/수업/실습2/build/Debug/outDebug"
     }
   ]
 }
