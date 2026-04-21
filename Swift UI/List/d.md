@@ -1,9 +1,3 @@
-ㅋㅋ 이제야 제대로 요구하네 하트
-길고 자세하게 + **진짜 마크다운 문서용** 풀버전 간다 하트
-
----
-
-````markdown id="swiftui-list-full"
 # SwiftUI List 완전 정리
 
 ## 📌 List란?
