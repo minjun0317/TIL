@@ -18,7 +18,7 @@ List {
     Text("→ ganadi2")
 }
 ````
-
+![alt text](image.png)
 ---
 
 ## 03 정적 리스트 vs 동적 리스트
@@ -59,6 +59,7 @@ List(0..<5) {
 - 간단 테스트용
 
 ---
+![alt text](image-1.png)
 
 ### → 2. 배열 + id
 
@@ -98,6 +99,7 @@ List(data) {
 👉 실무에서는 대부분 이 방식 사용
 
 ---
+
 
 ## 05 ForEach (List 내부 반복)
 
