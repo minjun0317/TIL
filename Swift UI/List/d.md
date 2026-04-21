@@ -1,13 +1,13 @@
 # SwiftUI List 완전 정리
 
-## 📌 List란?
+## 01 List란?
 - SwiftUI에서 **세로 스크롤 리스트 UI**를 만드는 기본 컨테이너
 - UIKit의 `UITableView` 느낌
 - 데이터 기반 UI 구성에 핵심적으로 사용됨
 
 ---
 
-## 📌 기본 구조
+## 02 기본 구조
 
 - `List` 안에 들어가는 View 하나 = 하나의 row
 
@@ -21,7 +21,7 @@ List {
 
 ---
 
-## 📌 정적 리스트 vs 동적 리스트
+## 03 정적 리스트 vs 동적 리스트
 
 ### → 정적 리스트
 
@@ -40,12 +40,12 @@ List {
 
 ### → 동적 리스트
 
-* 데이터를 기반으로 자동 생성됨
-* 실무에서 거의 이거 씀
+- 데이터를 기반으로 자동 생성됨
+- 실무에서 거의 이거 씀
 
 ---
 
-## 📌 동적 리스트 만드는 방법
+## 04 동적 리스트 만드는 방법
 
 ### → 1. Range 사용
 
@@ -55,8 +55,8 @@ List(0..<5) {
 }
 ```
 
-* 숫자 범위로 반복 생성
-* 간단 테스트용
+- 숫자 범위로 반복 생성
+- 간단 테스트용
 
 ---
 
@@ -70,7 +70,7 @@ List(data, id: \.self) {
 }
 ```
 
-* `id: \.self` → 각 요소 자체를 식별자로 사용
+- `id: \.self` → 각 요소 자체를 식별자로 사용
 
 ---
 
@@ -92,17 +92,17 @@ List(data) {
 }
 ```
 
-* SwiftUI는 **각 row를 구분할 수 있어야 렌더링 가능**
-* 그래서 반드시 `id` 필요
+- SwiftUI는 **각 row를 구분할 수 있어야 렌더링 가능**
+- 그래서 반드시 `id` 필요
 
 👉 실무에서는 대부분 이 방식 사용
 
 ---
 
-## 📌 ForEach (List 내부 반복)
+## 05 ForEach (List 내부 반복)
 
-* List 안에서 동적 반복 처리할 때 사용
-* 정적 + 동적 섞을 때 필수
+- List 안에서 동적 반복 처리할 때 사용
+- 정적 + 동적 섞을 때 필수
 
 ```swift
 List {
@@ -118,9 +118,9 @@ List {
 
 ---
 
-## 📌 Section (구역 나누기)
+## 06 Section (구역 나누기)
 
-* 리스트를 카테고리별로 나눌 수 있음
+- 리스트를 카테고리별로 나눌 수 있음
 
 ```swift
 List {
@@ -146,7 +146,7 @@ Section(
 
 ---
 
-## 📌 List 스타일
+## 07 List 스타일
 
 ```swift
 .listStyle(.insetGrouped)
@@ -154,16 +154,16 @@ Section(
 
 ### → 주요 스타일
 
-* `.plain`
-* `.grouped`
-* `.insetGrouped`
-* `.sidebar`
+- `.plain`
+- `.grouped`
+- `.insetGrouped`
+- `.sidebar`
 
 👉 기능은 동일, UI만 변경됨
 
 ---
 
-## 📌 삭제 기능 (onDelete)
+## 08 삭제 기능 (onDelete)
 
 ```swift
 @State var data = [
@@ -187,7 +187,7 @@ func delete(at offsets: IndexSet) {
 
 ---
 
-## 📌 이동 기능 (onMove)
+## 09 이동 기능 (onMove)
 
 ```swift
 List {
@@ -208,17 +208,17 @@ func move(from: IndexSet, to: Int) {
 
 ---
 
-## 📌 EditButton
+## 10 EditButton
 
 ```swift
 .navigationBarItems(trailing: EditButton())
 ```
 
-* 삭제 / 이동 활성화 버튼
+- 삭제 / 이동 활성화 버튼
 
 ---
 
-## 📌 선택 (Selection)
+## 11 선택 (Selection)
 
 ### → 여러 개 선택
 
@@ -238,7 +238,7 @@ List(data, selection: $selected) {
 
 ---
 
-## 📌 리스트 커스터마이징
+## 12 리스트 커스터마이징
 
 ### → row 여백 제거
 
@@ -264,7 +264,7 @@ List(data, selection: $selected) {
 
 ---
 
-## 📌 NavigationLink (리스트 클릭 이동)
+## 13 NavigationLink (리스트 클릭 이동)
 
 ```swift
 NavigationStack {
@@ -282,26 +282,26 @@ NavigationStack {
 
 ---
 
-## 📌 성능 특징
+## 14 성능 특징
 
-* Lazy 로드 방식 (보이는 것만 그림)
-* 데이터 많아도 성능 유지됨
-* 대신 id 관리 잘해야 함
-
----
-
-## 📌 핵심 정리
-
-* List = SwiftUI 기본 리스트 UI
-* 동적 데이터 = 필수
-* id 없으면 렌더링 불가
-* ForEach = 반복 처리
-* Section = 구역 나누기
-* onDelete / onMove = 인터랙션
-* NavigationLink = 화면 이동
+- Lazy 로드 방식 (보이는 것만 그림)
+- 데이터 많아도 성능 유지됨
+- 대신 id 관리 잘해야 함
 
 ---
 
-## 📌 한줄 핵심 요약
+## 15 핵심 정리
 
-→ "List는 데이터 기반으로 UI를 그리는 SwiftUI의 핵심 컨테이너"
+- List = SwiftUI 기본 리스트 UI
+- 동적 데이터 = 필수
+- id 없으면 렌더링 불가
+- ForEach = 반복 처리
+- Section = 구역 나누기
+- onDelete / onMove = 인터랙션
+- NavigationLink = 화면 이동
+
+---
+
+## 16 한줄 요약
+
+→ List는 데이터 기반으로 UI를 그리는 SwiftUI의 핵심 컨테이너
