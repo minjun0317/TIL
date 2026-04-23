@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/kimminjun/Desktop/studyios/TILC/수업/실습4/problem2"
+relocations:     []
+...
