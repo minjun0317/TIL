@@ -1,0 +1,50 @@
+# 깃허브에서 브랜치 만든 경우
+
+## 1. 프로젝트 clone
+
+git clone 저장소주소
+
+---
+
+## 2. 폴더 들어가기
+
+cd MayWave-iOS
+
+---
+
+## 3. 최신 정보 가져오기
+
+git fetch origin
+
+→ 깃허브에서 만든 브랜치 목록 가져옴
+
+---
+
+## 4. 브랜치 이동
+
+git switch 브랜치명
+
+예시
+
+git switch feature/chat
+
+→ 자동으로 origin 브랜치 연결됨
+
+---
+
+## 5. 작업
+
+코드 수정
+
+---
+
+## 6. 저장
+
+git add .
+git commit -m "채팅 UI 추가"
+
+---
+
+## 7. 업로드
+
+git push origin feature/chat
