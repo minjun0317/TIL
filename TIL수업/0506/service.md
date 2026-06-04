@@ -8,7 +8,7 @@
 ```txt
 View
 ↓
-Service
+Service 어떻게 들어오는지
 ↓
 Server / API
 ↓
@@ -139,3 +139,30 @@ struct GanadiProfileView: View {
 
 Service
 → View 대신 서버통신과 데이터 처리를 담당하는 계층
+
+
+기명서
+https(IT-da/api) 
+
+baseurl
+호출 X, 프라이빗
+let 
+
+server - service - dto -view model - view
+뒤에 있는 데이터 흐름들은 server에 종속
+
+서버상태 외우기><
+2는 성공적
+4는 클라이언트 문제 409 중복(서버 안에 있는 데이터베이스에 입력값이 같은게 두개) 통신은 됫음 true긴함 
+5는 서버 문제
+
+
+애러로깅
+서버통신(네트워킹) -> 오류 -> 결과값에 대해서 맞니? 안맞니? bool 
+true, false 콘솔에 뜸
+조건이 필요함
+서버에서 지정해줌 로직하니까 숫자로 지정함 
+응답 불일치 if, 에러로 ㄱㄱ 일치하지 않는걸 숫자로 
+네트워킹 - 데이터가 오가는거
+
+xcode, vs cdoe [IDE] -> UI버그(디버깅)
